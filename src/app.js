@@ -18,7 +18,10 @@ class App {
 
     // Usa o caminho da pasta de uploads para servir os arquivos estáticos
     this.app.use('/product-file', express.static(uploadDir));
+    this.app.use('/category-file', express.static(uploadDir));
   }
+
+
 
   routes() {
     this.app.use(routes);
